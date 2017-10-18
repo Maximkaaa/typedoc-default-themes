@@ -62,6 +62,12 @@
                         :&nbsp;
                     </span>
                     {{#with type}}{{>type}}{{/with}}
+                    {{#if defaultValue}}
+                        <span class="tsd-signature-symbol">
+                            &nbsp;=&nbsp;
+                            {{defaultValue}}
+                        </span>
+                    {{/if}}
                 {{/compact}}</h5>
 
                 {{> comment}}
